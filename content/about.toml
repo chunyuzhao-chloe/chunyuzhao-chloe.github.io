@@ -1,0 +1,14 @@
+type = "about"
+
+[profile]
+research_interests = []
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+
+
+
+
+

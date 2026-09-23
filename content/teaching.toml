@@ -1,0 +1,36 @@
+type = "card"
+title = "Teaching"
+[[items]]
+title = "Advanced Microeconomics"
+subtitle = "Teaching assistant, with Prof. Inácio Bó (University of Macau)"
+date = "2024, 2026"
+
+[[items]]
+title = "Math Camp for Econ PhD Students"
+subtitle = "Instructor (University of Macau)"
+date = "2025"
+
+[[items]]
+title = "Experimental Economics Laboratory"
+subtitle = "Research assistant, with Prof. Lawrence Choo (University of Macau)"
+date = "2025"
+
+[[items]]
+title = "Public Economics"
+subtitle = "Teaching assistant, with Prof. Guangzhen Sun (University of Macau)"
+date = "2024"
+
+[[items]]
+title = "Intermediate Microeconomics"
+subtitle = "Teaching assistant, with Prof. Gary Wong (University of Macau)"
+date = "2024"
+
+[[items]]
+title = "Principles of Macroeconomics"
+subtitle = "Teaching assistant, with Prof. Chowdhury Mahmoud (The University of British Columbia)"
+date = "2023"
+
+[[items]]
+title = "Making Sense of Economic Data"
+subtitle = "Teaching assistant, with Prof. Jonathan Graves (The University of British Columbia)"
+date = "2022"

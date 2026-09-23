@@ -1,0 +1,68 @@
+[site]
+title = "Chunyu ZHAO"
+description = "PhD student at the University of Macau."
+favicon = "/favicon.svg"
+last_updated = "August, 2026"
+
+[author]
+name = "Chunyu ZHAO"
+title = "Ph.D. Candidate"
+institution = "University of Macau"
+avatar = "/bio.jpg"
+
+[social]
+# Contact information (leave blank or delete to hide)
+
+email = "zhaochunyu.chloe@gmail.com"
+location = "Taipa, Macau SAR, China"
+location_url = "https://maps.google.com"
+location_details = [
+  "Department of Economics,",
+  "University of Macau"
+]
+
+
+[features]
+# Show a like button on the about page
+enable_likes = false
+
+# Display all subpages on a single page
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "Home"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Teaching"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+
+[[navigation]]
+title = "CV"
+type = "link"
+target = "_blank"
+href = "/chunyuzhao_cv.pdf"
