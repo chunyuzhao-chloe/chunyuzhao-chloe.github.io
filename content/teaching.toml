@@ -1,6 +1,11 @@
 type = "card"
 title = "Teaching"
 [[items]]
+title = "Intermediate Microeconomics"
+subtitle = "Teaching assistant, with Prof. Ernest Lai (University of Macau)"
+date = "2026"
+
+[[items]]
 title = "Advanced Microeconomics"
 subtitle = "Teaching assistant, with Prof. Inácio Bó (University of Macau)"
 date = "2024, 2026"
