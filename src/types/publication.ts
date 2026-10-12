@@ -35,6 +35,7 @@ export interface Publication {
   pmid?: string;
   url?: string;
   code?: string;
+  pdf?: string;
   pdfUrl?: string;
   tags: string[];
   keywords?: string[];
