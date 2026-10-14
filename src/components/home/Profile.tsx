@@ -58,7 +58,7 @@ export default function Profile({ author, features, researchInterests }: Profile
             className="sticky top-8"
         >
             {/* Profile Image */}
-            <div className="w-40 h-56 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+            <div className="w-48 h-64 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
                 <Image
                     src={author.avatar}
                     alt={author.name}

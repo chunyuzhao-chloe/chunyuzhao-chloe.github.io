@@ -112,6 +112,20 @@ export default function PublicationsList({ publications, embedded = false }: Pub
                                                     )}
                 
                                                     <div className="flex flex-wrap gap-2 mt-auto">
+                                                        {pub.abstract && (
+                                                            <button
+                                                                onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
+                                                                className={cn(
+                                                                    "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
+                                                                    expandedAbstractId === pub.id
+                                                                        ? "bg-accent text-white"
+                                                                        : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                                                                )}
+                                                            >
+                                                                <DocumentTextIcon className="h-3 w-3 mr-1.5" />
+                                                                {messages.publications.abstract}
+                                                            </button>
+                                                        )}
                                                         {(pub.pdf || pub.pdfUrl) && (
                                                             <a
                                                                 href={pub.pdf || pub.pdfUrl}
@@ -151,20 +165,6 @@ export default function PublicationsList({ publications, embedded = false }: Pub
                                                             >
                                                                 {messages.publications.code}
                                                             </a>
-                                                        )}
-                                                        {pub.abstract && (
-                                                            <button
-                                                                onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
-                                                                className={cn(
-                                                                    "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
-                                                                    expandedAbstractId === pub.id
-                                                                        ? "bg-accent text-white"
-                                                                        : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
-                                                                )}
-                                                            >
-                                                                <DocumentTextIcon className="h-3 w-3 mr-1.5" />
-                                                                {messages.publications.abstract}
-                                                            </button>
                                                         )}
                                                     </div>
                 
