@@ -16,8 +16,11 @@ export default function Footer({ lastUpdated, lastUpdatedByLocale, defaultLocale
   const resolvedLastUpdated =
     lastUpdatedByLocale?.[locale] ||
     (defaultLocale ? lastUpdatedByLocale?.[defaultLocale] : undefined) ||
-    lastUpdated ||
-    new Date().toLocaleDateString(locale || 'en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    lastUpdated;
+
+  if (!resolvedLastUpdated) {
+    return null;
+  }
 
   return (
     <footer className="border-t border-neutral-200/50 bg-neutral-50/50 dark:bg-neutral-900/50 dark:border-neutral-700/50">
@@ -26,7 +29,6 @@ export default function Footer({ lastUpdated, lastUpdatedByLocale, defaultLocale
           <p className="text-xs text-neutral-500">
             {messages.footer.lastUpdated}: {resolvedLastUpdated}
           </p>
-
         </div>
       </div>
     </footer>
