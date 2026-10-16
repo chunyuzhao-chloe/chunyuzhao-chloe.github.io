@@ -27,12 +27,24 @@ export async function generateMetadata(): Promise<Metadata> {
   const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
 
   return {
+    metadataBase: new URL('https://chunyuzhao-chloe.github.io'),
     title: {
       default: config.site.title,
       template: `%s | ${config.site.title}`,
     },
     description: config.site.description,
-    keywords: [config.author.name, 'PhD', 'Research', config.author.institution],
+    keywords: [
+      config.author.name,
+      'Chunyu Zhao',
+      'Chunyu ZHAO',
+      '赵春雨',
+      'Economics',
+      'University of Macau',
+      'Market Design',
+      'Matching Theory',
+      'Experimental Economics',
+      config.author.institution,
+    ],
     authors: [{ name: config.author.name }],
     creator: config.author.name,
     publisher: config.author.name,
