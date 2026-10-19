@@ -58,6 +58,9 @@ export async function generateMetadata(): Promise<Metadata> {
       description: config.site.description,
       siteName: `${config.author.name}'s Academic Website`,
     },
+    verification: {
+      google: 'WzShkZ7f9qw8HUAXJQze5MCgXQg-4W1T0O7Us_gd2iM',
+    },
   };
 }
 
@@ -156,6 +159,7 @@ export default function RootLayout({
   return (
     <html lang={runtimeI18n.defaultLocale} className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="WzShkZ7f9qw8HUAXJQze5MCgXQg-4W1T0O7Us_gd2iM" />
         <link rel="icon" href={config.site.favicon} type="image/svg+xml" />
         <link rel="dns-prefetch" href="https://jialeliu.com" />
         <link rel="preconnect" href="https://jialeliu.com" crossOrigin="" />
