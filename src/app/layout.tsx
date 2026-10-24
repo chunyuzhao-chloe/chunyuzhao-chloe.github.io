@@ -26,13 +26,16 @@ export async function generateMetadata(): Promise<Metadata> {
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
   const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
 
+  const pageTitle = `${config.author.name} - Ph.D. in Economics`;
+  const metaDescription = `${config.author.name} is a Ph.D. Candidate in Economics at the ${config.author.institution}. Research areas: Market Design, Matching Theory, and Experimental Economics.`;
+
   return {
     metadataBase: new URL('https://chunyuzhao-chloe.github.io'),
     title: {
-      default: config.site.title,
+      default: pageTitle,
       template: `%s | ${config.site.title}`,
     },
-    description: config.site.description,
+    description: metaDescription,
     keywords: [
       config.author.name,
       'Chunyu Zhao',
@@ -54,8 +57,8 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: 'website',
       locale: openGraphLocale,
-      title: config.site.title,
-      description: config.site.description,
+      title: pageTitle,
+      description: metaDescription,
       siteName: `${config.author.name}'s Academic Website`,
     },
     verification: {
