@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
 
   const pageTitle = `${config.author.name} - Ph.D. in Economics`;
-  const metaDescription = `${config.author.name} is a Ph.D. Candidate in Economics at the ${config.author.institution}. Research areas: Market Design, Matching Theory, and Experimental Economics.`;
+  const metaDescription = `${config.author.name}. Ph.D. Candidate in Economics at the ${config.author.institution}. My research interest lies in Market Design, Matching Theory, and Experimental Economics.`;
 
   return {
     metadataBase: new URL('https://chunyuzhao-chloe.github.io'),
